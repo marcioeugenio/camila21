@@ -9,7 +9,6 @@
     body {
       background-color: #eef8f1;
     }
-
     #chat {
       max-height: 400px;
       overflow-y: auto;
@@ -19,3 +18,52 @@
       background: #fff;
       border-radius: 12px;
     }
+    .camila {
+      color: #d63384;
+    }
+    .user {
+      color: #0d6efd;
+    }
+    .message {
+      margin-bottom: 0.8rem;
+    }
+    .profile-img {
+      width: 80px;
+      border-radius: 50%;
+      border: 2px solid #d63384;
+      margin-bottom: 1rem;
+    }
+    .topo {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    .topo h2 {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <div class="topo">
+      <img src="camila_perfil.jpg" class="profile-img" alt="Camila" />
+      <h2>💬 Camila <small>Online agora</small></h2>
+    </div>
+
+    <div id="chat">
+      <div class="message camila"><strong class="camila">Camila:</strong> Oi, eu sou a Camila. Como é seu nome? 😊</div>
+    </div>
+
+    <form id="chat-form">
+      <input type="text" id="mensagem" placeholder="Digite sua mensagem..." autocomplete="off" />
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <!-- SCRIPT JAVASCRIPT -->
+  <script src="chat.js"></script>
+</body>
+</html>
